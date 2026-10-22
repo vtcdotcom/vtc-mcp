@@ -130,4 +130,4 @@ R = read-only · W = changes state · D = destructive/consequential; always requ
 
 ## License
 
-See [LICENSE](LICENSE).
+Licensed under the [Apache License 2.0](LICENSE).
