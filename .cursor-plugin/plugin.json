@@ -1,0 +1,11 @@
+{
+  "name": "vtc-spaces",
+  "displayName": "VTC Spaces",
+  "version": "0.5.1",
+  "description": "Connect your AI client to VTC Spaces: search public Spaces and people, and after OAuth sign-in inspect Space data, list apps, run confirmed AI Guide actions and draft workflows.",
+  "author": { "name": "VTC", "email": "dev@vtc.com", "url": "https://vtc.com" },
+  "homepage": "https://vtc.com/developers",
+  "license": "SEE LICENSE",
+  "keywords": ["vtc", "mcp", "spaces", "workflows", "oauth"],
+  "logo": "assets/logo.svg"
+}

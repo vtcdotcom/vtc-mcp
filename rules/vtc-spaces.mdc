@@ -1,0 +1,33 @@
+---
+description: When using the VTC Spaces MCP server — tenancy, read-only data access, confirmations
+alwaysApply: false
+---
+
+# VTC Spaces MCP
+
+## Guest (no sign-in)
+
+- `search_public` / `search_public_spaces` / `search_public_people` find public Spaces, networks and people
+- `set_guest_context` binds one public Space for this session, then `list_guest_public_apps`,
+  `describe_public_app_surface`, `list_public_collection_documents`, `fetch_app_public_route`
+
+## Signed in (OAuth Connect)
+
+- Call `explain_space_context` or `get_space_summary` first; confirm the Space and environment with the user
+- Data flow: `list_collections` → `sample_document` → narrow `find_documents` (read-only; max 50 docs)
+- Soft-deleted docs are excluded by default; sensitive fields are redacted by default
+- Never invent write/update/delete tools — Space data access is read-only
+
+## Actions and workflows
+
+- `list_available_actions` then `execute_action`: the first call returns a `confirmation_token`;
+  show the proposal to the human and only call again with that token after they approve
+- `propose_workflow` drafts without saving; `save_workflow` and a real `run_workflow` need a `confirmation_token`
+- Prefer `run_workflow` with `dry_run=true` before a confirmed run
+- Never invent `confirmed: true` or a fake token
+
+## Do not
+
+- Query another Space than the one you signed in to (the Space comes from the token)
+- Paste tokens, OTP codes or connection strings into chat or logs
+- Skip confirmation for actions or workflow save/run

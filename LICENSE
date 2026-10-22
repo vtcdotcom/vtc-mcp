@@ -1,0 +1,7 @@
+LICENSE PLACEHOLDER — choose before publishing.
+
+This repository contains only configuration, documentation, rules and skills for the hosted
+VTC Spaces MCP server (https://mcp.vtc.com/mcp). The server source is not included.
+
+Suggested options: MIT (permissive; matches the previous plugin.json) or Apache-2.0.
+Replace this file with the full license text and update "license" in .cursor-plugin/plugin.json.
