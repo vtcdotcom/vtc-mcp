@@ -116,7 +116,7 @@ R = read-only · W = changes state · D = destructive/consequential; always requ
 
 | Path | Purpose |
 |---|---|
-| `.mcp.json` | Remote MCP server config (used by Cursor Directory / plugin installs) |
+| `mcp.json` | Remote MCP server config for Cursor plugin installs (`.mcp.json` is the same config for other clients) |
 | `.cursor-plugin/plugin.json` | Plugin metadata |
 | `rules/vtc-spaces.mdc` | Cursor rule: safe usage (read-only data, confirmations, one Space) |
 | `skills/vtc-spaces/SKILL.md` | Agent skill: how to connect and use the tools |

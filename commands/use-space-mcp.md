@@ -1,4 +1,5 @@
 ---
+name: use-space-mcp
 description: Bind VTC Spaces MCP to my Space and work inside it
 ---
 

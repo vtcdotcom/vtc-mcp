@@ -2,10 +2,21 @@
   "name": "vtc-spaces",
   "displayName": "VTC Spaces",
   "version": "0.5.1",
-  "description": "Connect your AI client to VTC Spaces: search public Spaces and people, and after OAuth sign-in inspect Space data, list apps, run confirmed AI Guide actions and draft workflows.",
-  "author": { "name": "VTC", "email": "dev@vtc.com", "url": "https://vtc.com" },
+  "description": "Connect Cursor to VTC Spaces: search public Spaces and people, and after OAuth sign-in inspect Space data, list and run a Space's apps' AI Guide actions (with confirmation) and draft workflows.",
+  "author": {
+    "name": "VTC",
+    "email": "dev@vtc.com",
+    "url": "https://vtc.com"
+  },
   "homepage": "https://vtc.com/developers",
   "license": "Apache-2.0",
-  "keywords": ["vtc", "mcp", "spaces", "workflows", "oauth"],
-  "logo": "assets/logo.svg"
+  "keywords": [
+    "vtc",
+    "mcp",
+    "spaces",
+    "workflows",
+    "oauth"
+  ],
+  "logo": "assets/logo.png",
+  "repository": "https://github.com/vtcdotcom/vtc-mcp"
 }

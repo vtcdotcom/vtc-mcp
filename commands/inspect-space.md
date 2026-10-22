@@ -1,4 +1,5 @@
 ---
+name: inspect-space
 description: Inspect the current VTC Space's data via MCP
 ---
 
